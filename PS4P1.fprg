@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="steve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-29 09:09:31 pm"/>
+        <attribute name="created" value="c3RldmU7U1RFVkVOTEFQVE9QOzIwMjMtMTAtMjk7MDg6NDU6MTMgcG07MjgzMg=="/>
+        <attribute name="edited" value="c3RldmU7U1RFVkVOTEFQVE9QOzIwMjMtMTAtMjk7MDk6MDk6MzEgcG07MjsyOTQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstexampercent" type="Real" array="False" size=""/>
+            <declare name="secondexampercent" type="Real" array="False" size=""/>
+            <declare name="finalscore" type="Real" array="False" size=""/>
+            <declare name="firstexamscore" type="Real" array="False" size=""/>
+            <declare name="secondexamscore" type="Real" array="False" size=""/>
+            <input variable="firstexampercent"/>
+            <input variable="secondexampercent"/>
+            <assign variable="firstexamscore" expression="firstexampercent * 0.6"/>
+            <assign variable="secondexamscore" expression="secondexampercent * 0.4"/>
+            <assign variable="finalscore" expression="firstexamscore + secondexamscore"/>
+            <output expression="&quot;Your final exam score is &quot; &amp;finalscore" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

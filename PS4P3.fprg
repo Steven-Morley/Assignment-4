@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="steve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-29 10:08:33 pm"/>
+        <attribute name="created" value="c3RldmU7U1RFVkVOTEFQVE9QOzIwMjMtMTAtMjk7MDk6MzM6NTkgcG07Mjg0MA=="/>
+        <attribute name="edited" value="c3RldmU7U1RFVkVOTEFQVE9QOzIwMjMtMTAtMjk7MTA6MDg6MzMgcG07MTsyOTM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mealtotal" type="Real" array="False" size=""/>
+            <declare name="percentage15" type="Real" array="False" size=""/>
+            <declare name="percentage15total" type="Real" array="False" size=""/>
+            <declare name="percentage18" type="Real" array="False" size=""/>
+            <declare name="percentage18total" type="Real" array="False" size=""/>
+            <declare name="percentage20" type="Real" array="False" size=""/>
+            <declare name="percentage20total" type="Real" array="False" size=""/>
+            <input variable="mealtotal"/>
+            <assign variable="percentage15" expression="mealtotal * 0.15"/>
+            <assign variable="percentage18" expression="mealtotal * 0.18"/>
+            <assign variable="percentage20" expression="mealtotal * 0.20"/>
+            <assign variable="percentage15total" expression="mealtotal + percentage15"/>
+            <assign variable="percentage18total" expression="mealtotal + percentage18"/>
+            <assign variable="percentage20total" expression="mealtotal + percentage20"/>
+            <output expression="&quot;With 15% Tip:&quot;" newline="True"/>
+            <output expression="&quot;Total:  $ &quot; &amp;mealtotal" newline="True"/>
+            <output expression="&quot;Tip:  $ &quot; &amp;percentage15" newline="True"/>
+            <output expression="&quot;Total with Tip:  $ &quot; &amp;percentage15total" newline="True"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="&quot;With 18% Tip:&quot;" newline="True"/>
+            <output expression="&quot;Total:  $ &quot; &amp;mealtotal" newline="True"/>
+            <output expression="&quot;Tip:  $ &quot; &amp;percentage18" newline="True"/>
+            <output expression="&quot;Total with Tip:  $ &quot; &amp;percentage18total" newline="True"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="&quot;With 20% Tip:&quot;" newline="True"/>
+            <output expression="&quot;Total:  $ &quot; &amp;mealtotal" newline="True"/>
+            <output expression="&quot;Tip:  $ &quot; &amp;percentage20" newline="True"/>
+            <output expression="&quot;Total with Tip:  $ &quot; &amp;percentage20total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
